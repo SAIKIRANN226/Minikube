@@ -1,7 +1,7 @@
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
 
-  name = "workstation"
+  name = "workstation-cluster-client"
   ami = data.aws_ami.centos8.id
   instance_type          = "t2.micro"
   #key_name               = "user1"
